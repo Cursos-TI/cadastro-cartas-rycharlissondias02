@@ -12,11 +12,11 @@ int main()
   char codigo1[3], codigo2[3];
   char cidade1[20], cidade2[20];
   int populacao1, populacao2;
-  double area1, area2;
-  double pib1, pib2;
+  float area1, area2;
+  float pib1, pib2;
   int ponto1, ponto2;
-  double densidade1, densidade2;
-  double pib_per_capita1, pib_per_capita2;
+  float densidade1, densidade2;
+  float pib_per_capita1, pib_per_capita2;
 
   
   // Área para entrada de dados
@@ -38,17 +38,17 @@ int main()
   scanf("%d", &populacao1);
 
   printf("Informe a área da cidade (ex: '123.456'): \n");
-  scanf("%lf", &area1);
+  scanf("%f", &area1);
 
   printf("Informe o PIB da cidade(ex: '45.6'): \n");
-  scanf("%lf", &pib1);
+  scanf("%f", &pib1);
 
   printf("Informe o número de pontos turísticos da cidade(ex: '12'): \n");
   scanf("%d", &ponto1);
 
   //cálculo de densidade populacional da carta 01
 
-  densidade1 = (double) populacao1 / area1;
+  densidade1 = (float) populacao1 / area1;
   pib_per_capita1 = (pib1 * 1000000000.0) / populacao1;
 
  //Cadastro da 2° carta
@@ -68,17 +68,17 @@ int main()
   scanf("%d", &populacao2);
 
   printf("Informe a área da cidade (ex: '123.456'): \n");
-  scanf("%lf", &area2);
+  scanf("%f", &area2);
 
   printf("Informe o PIB da cidade(ex: '45.6'): \n");
-  scanf("%lf", &pib2);
+  scanf("%f", &pib2);
 
   printf("Informe o número de pontos turísticos da cidade(ex: '12'): \n");
   scanf("%d", &ponto2);
 
   //cálculo da densidade populacional da carta 02
 
-  densidade2 = (double) populacao2 / area2;
+  densidade2 = (float) populacao2 / area2;
   pib_per_capita2 = (pib2 * 1000000000.0) / populacao2;
 
 
