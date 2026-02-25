@@ -8,21 +8,15 @@ int main()
 {
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
-  char estado1;
-  char codigo1[3];
-  char cidade1[20];
-  int populacao1;
-  float area1;
-  float pib1;
-  int ponto1;
+  char estado1, estado2;
+  char codigo1[3], codigo2[3];
+  char cidade1[20], cidade2[20];
+  int populacao1, populacao2;
+  float area1, area2;
+  float pib1, pib2;
+  int ponto1, ponto2;
 
-  char estado2;
-  char codigo2[3];
-  char cidade2[20];
-  int populacao2;
-  float area2;
-  float pib2;
-  int ponto2;
+  
   // Área para entrada de dados
 
   printf("Cadastro da carta 01\n");
